@@ -6,7 +6,9 @@ import {
   Mail,
   Building2,
   Bell,
-  User
+  User,
+  Twitter,
+  Settings
 } from "lucide-react";
 import {
   Sidebar,
@@ -52,7 +54,7 @@ const navigationItems = [
   {
     title: "Settings",
     url: createPageUrl("Settings"),
-    icon: User,
+    icon: Settings,
     description: "Notification Preferences"
   }
 ];
