@@ -137,6 +137,17 @@ export default function BillCard({ bill, onViewDetails, onToggleTracking, isTrac
           <p className="text-sm text-slate-600 line-clamp-2">{bill.summary}</p>
         )}
 
+        {bill.last_action && (
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">
+              Latest Update
+            </p>
+            <p className="text-sm text-slate-700 font-medium">
+              {bill.last_action}
+            </p>
+          </div>
+        )}
+
         <div className="flex justify-end pt-2">
           <Button 
             variant="outline" 
